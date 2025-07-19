@@ -33,7 +33,7 @@ export default function Carousel() {
     <div className="relative max-w-4xl mx-auto">
       <div className="relative h-96 md:h-[500px] rounded-3xl overflow-hidden border-2 border-pink-400/30 shadow-2xl shadow-pink-500/20">
         <Image
-          src={`/placeholder.svg?height=500&width=800&query=${images[currentIndex].query}`}
+          src={`/pushpa${(currentIndex % 5) + 1}.jpg?height=500&width=800&query=${images[currentIndex].query}`}
           alt={images[currentIndex].caption}
           fill
           className="object-cover transition-all duration-700"
