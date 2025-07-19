@@ -30,7 +30,7 @@ export default function Gallery() {
             <div key={image.id} className="group relative">
               <div className="aspect-[4/5] relative overflow-hidden bg-white/5 hover-zoom">
                 <Image
-                  src={`/placeholder.svg?height=600&width=480&query=${image.query}`}
+                  src={`/pushpa${(image.id % 5) + 1}.jpg?height=600&width=480&query=${image.query}`}
                   alt={image.caption}
                   fill
                   className="object-cover"
